@@ -11,3 +11,7 @@ class Department(BaseModel) :
 #응답용 Model
 class DepartmentResponse(Department) :
     id : int
+
+# Student에서 사용
+class DepartmentName(BaseModel):
+    name : Optional[str]
